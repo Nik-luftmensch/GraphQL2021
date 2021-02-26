@@ -3,9 +3,11 @@ import {ApolloProvider} from 'react-apollo';
 //components
 import BookList from './components/BookList'
 import AddBook from './components/AddBook'
+require('dotenv').config();
 
+const ServerConnectionURL = process.env.ServerURL ;
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: ServerConnectionURL || "http://localhost:4000/graphql/graphql",
   cache: new InMemoryCache()
 });
 
