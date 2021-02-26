@@ -65,8 +65,11 @@ Connected to MongoDB database
 If not then you missed something
 
 If you see the above output go to your browser with the following link 
-- http://localhost:4000/graphql 
-and what you see is GraphiQL playground where you can play with your server without an UI adn check the implementation of server side
+```sh
+http://localhost:4000/graphql 
+
+And what you see is GraphiQL playground where you can play with your server without an UI adn check the implementation of server side
+```
 
 To Start Client side and play with React
 -
@@ -90,8 +93,13 @@ To create a production build, use npm run build.
 If not then you missed something
 
 If you see the above output go to your browser with the following link 
-- http://localhost:3000 
-and what you see is the client side connected with the server enjoy playing and adding and testing new features.
+
+ ```sh
+http://localhost:3000 
+
+And what you see is the client side connected with the server enjoy playing and adding and testing new features.
+```
+
 
 Deployment 
 ==========
@@ -101,13 +109,21 @@ Deployment
 ServerSide EndpointURL
 -
 
-- https://ns-graphql-server.herokuapp.com/
+ ```sh
+https://ns-graphql-server.herokuapp.com/
+
 This wont get you any thing if you paste in Browser just a " Cannot GET /"
 But can use the URL on POSTMAN to post and get the data
+```
 
-- To check the server end point online go to 
- http://vr-test-server.herokuapp.com/
+- To check the server end point go on the URL 
+
+
+ ```sh
+http://vr-test-server.herokuapp.com/
+
 Paste the server side endpoint and play online 
+``` 
 
 > ` Note :-
 If you deploying on any other WebHost such as AWS or Firebase dont forget to ADD environment variable named MongoDB_URL = DataBaseURL`
@@ -115,8 +131,11 @@ If you deploying on any other WebHost such as AWS or Firebase dont forget to ADD
 ClientSide EndpointURL
 -
 
-- https://ns-graphql-client.herokuapp.com/
+ ```sh
+https://ns-graphql-client.herokuapp.com/
+
 This is connected with the Serverside and then to database and a fully functioning website is up
+```
 
 > ` Note :-
 If you deploying on any other WebHost such as AWS or Firebase dont forget to ADD environment variable named REACT_APP_SERVER_URL = ServerEndPointURL`
